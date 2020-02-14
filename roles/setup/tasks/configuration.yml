@@ -1,2 +1,13 @@
 ---
 # doing configuration
+
+- name: Adding Homestead Vagrant Box
+  shell: vagrant box add laravel/homestead
+
+- name: Getting Homestead
+  git:
+    repo: https://github.com/laravel/homestead.git
+    dest: "{{general.local_home}}/Homestead"
+
+- name: Starting up Homestead
+  shell: cd ~/Homestead | git checkout release | bash init.sh
