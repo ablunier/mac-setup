@@ -1,0 +1,6 @@
+---
+# My MacBook setup playbook
+
+- hosts: mac 
+  roles:
+    - setup
