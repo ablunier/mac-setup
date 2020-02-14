@@ -1,0 +1,40 @@
+---
+# list of applications to install
+general:
+  local_home: "{{ lookup('env','HOME') }}"
+
+# homebrew applications
+applications:
+  - git
+  - curl
+  - wget
+
+# homebrew cask applications
+cask_applications:
+  - google-chrome
+  - firefox --language=gl
+  - slack
+  - iterm2
+  - virtualbox
+  - vagrant
+  - docker
+  - kitematic
+  - jetbrains-toolbox
+  - spotify
+  - steam
+  - dropbox
+  - ableton-live-suite
+  - libreoffice
+  - libreoffice-language-pack --language=gl
+  - vlc
+  - skyfonts
+  - transmission
+  - the-unarchiver
+  - skype
+  - sketch
+  - telegram-desktop
+  - guitar-pro
+  - mediahuman-audio-converter
+  - melodics
+
+downloads:
