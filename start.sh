@@ -30,7 +30,7 @@ echo "-------------------------------------------"
 install_dir="/tmp/macsetup-$RANDOM"
 mkdir $install_dir
 
-git clone git@github.com:ablunier/mac-setup.git $install_dir 
+git clone https://github.com/ablunier/mac-setup.git $install_dir 
 if [ ! -d $install_dir ]; then
     echo "failed to find mac-setup repository."
     echo "git cloned failed"
